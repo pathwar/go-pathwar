@@ -1,28 +1,28 @@
 package api
 
 type StdItem struct {
-	Id            string          `json:"_id",omitempty`
-	Created       string          `json:"_created",omitempty`
-	Etag          string          `json:"_etag",omitempty`
-	Links         map[string]Link `json:"_links",omitempty`
-	SchemaVersion int             `json:"_schema_version",omitempty`
-	Updated       string          `json:"_updated",omitempty`
+	Id            string          `json:"_id,omitempty"`
+	Created       string          `json:"_created,omitempty"`
+	Etag          string          `json:"_etag,omitempty"`
+	Links         map[string]Link `json:"_links,omitempty"`
+	SchemaVersion int             `json:"_schema_version,omitempty"`
+	Updated       string          `json:"_updated,omitempty"`
 }
 
 type StdList struct {
-	Links map[string]Link `json:"_links",omitempty`
-	Meta  Meta            `json:"_meta",omitempty`
+	Links map[string]Link `json:"_links,omitempty"`
+	Meta  Meta            `json:"_meta,omitempty"`
 }
 
 type Link struct {
-	Href  string `json:"href",omitempty`
-	Title string `json:"title",omitempty`
+	Href  string `json:"href,omitempty"`
+	Title string `json:"title,omitempty"`
 }
 
 type Meta struct {
-	MaxResults int `json:"max_results",omitempty`
-	Page       int `json:"page",omitempty`
-	Total      int `json:"total",omitempty`
+	MaxResults int `json:"max_results,omitempty"`
+	Page       int `json:"page,omitempty"`
+	Total      int `json:"total,omitempty"`
 }
 
 type RawOrganizationUsers struct {
